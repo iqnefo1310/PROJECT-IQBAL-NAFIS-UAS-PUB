@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF FLIX MOVIE</title>
+    <link rel="icon" href="../assets/logos/logo movie.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css      ');
+
+        body {
+            background-color: #031d3f;
+            color: white;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .light-theme {
+            background-color: aliceblue;
+            color: #2e2d2d;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00000064;
+            height: 50px;
+        }
+        i.bx bxs-sun {
+            width: 50px;
+            position: fixed;
+            background-color: aliceblue;
+            right: 0;
+            top: 0;
+            z-index: 999;
+        }
+
+        header figure {
+            display: flex;
+            align-items: center;
+        }
+
+        header figure img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        header figure h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            color: red;
+        }
+
+        header figure h1 span {
+            color: blueviolet;
+        }
+
+
+        #theme-toggle {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            position: fixed;
+            z-index: 1000;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="../assets/logos/logo movie.png" alt="INF MOVIE Logo">
+            <h1>inf flix <span>movie</span></h1>
+        </figure>
+        <i class='bx bxs-sun' ></i>
+        <input type="checkbox" id="theme-toggle">
+    </header>
+    <main>
+        <!-- contain login email -->
+         <form action="../HTML/home.html"></form>
+    </main>
+    <footer>
+        <!-- alamat lainnya -->
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('change', function () {
+                document.body.classList.toggle('light-theme', themeToggle.checked);
+            });XMLDocument
+        });
+    </script>
+</body>
+
+</html>
