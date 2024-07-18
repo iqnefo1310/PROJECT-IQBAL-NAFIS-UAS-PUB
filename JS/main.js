@@ -76,4 +76,5 @@ const options = {
     }
   });
   
+  
   getMovie();
