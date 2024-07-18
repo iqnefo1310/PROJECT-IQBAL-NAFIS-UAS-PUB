@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF FLIX MOVIE</title>
+    <link rel="icon" href="../assets/logos/logo movie.png">
+    <link rel="stylesheet" href="../CSS/navigasi.css">
+    <link rel="stylesheet" href="../CSS/detail.css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="../assets/logos/logo movie.png" alt="INF MOVIE Logo">
+            <h1>inf flix <span>movie</span></h1>
+        </figure>
+        <nav>
+            <!-- untuk navigasi hp -->
+            <input type="checkbox" class="tombol" id="lock">
+            <div class="hamburger">
+                <div class="ham atas"></div>
+                <div class="ham tengah"></div>
+                <div class="ham bawah"></div>
+            </div>
+            <div class="nav-hp">
+                <h1>I<span>N</span>F SITE<span>.com</span></h1>
+                <a class="p pl" href="../HTML/home.html">home</a>
+                <a class="p" href="#trending">trending</a>
+                <a class="p" href="#popular">popular</a>
+                <a class="p" href="../HTML/about.html">about</a>
+                <a href="../HTML/index.html">logout</a>
+            </div>
+            <!-- untuk navigasi laptop -->
+            <div class="nav-lap">
+                <a class="p pl" href="../HTML/home.html">home</a>
+                <a class="p" href="#trending">trending</a>
+                <a class="p" href="#popular">popular</a>
+                <a class="p" href="../HTML/about.html">about</a>
+                <a href="../HTML/index.html">logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="detail-movie">
+            <div class="frame-cont">
+                <!-- tempat video diputar -->
+                <iframe id="frame-embed" src=""></iframe>
+                <figcaption class="header-detail">
+                    <!-- tempat deskripsi movienya -->
+                </figcaption>
+            </div>
+            <div class="recomended">
+                <h1>direkomendasikan</h1>
+                <div class="container-rekomended">
+                    <!-- tampilan untuk rekomendasi movie lainnya -->
+                </div>
+            </div>
+        </section>
+        <a href="../html/home.html">back</a>
+    </main>
+    <script src="../js/detail.js"></script>
+</body>
+
+</html>

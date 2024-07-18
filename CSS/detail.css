@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background-image: url(../assets/Canva.lnk);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    >a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 27, 6);
+        padding: 10px;
+        border-radius: 10px;
+        width: 5%;
+    }
+}
+
+.detail-movie {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-movie .frame-cont {
+    width: 100%;
+    >iframe {
+        height: 50vh;
+        width: 100%;
+        border-radius: 20px;
+        background-color: black;
+    }
+}
+
+figcaption {
+    >p {
+        padding: 10px;
+        font-size: 2vw;
+    }
+
+    >h1 {
+        color: deeppink;
+        text-shadow: 0 0 10px black;
+        padding: 10px;
+        font-size: 3vw;
+    }
+
+}
+
+.recomended {
+    background-color: black;
+    color: aliceblue;
+}
+
+@media (max-width: 400px) {
+    .detail-movie .frame-cont {
+        >iframe {
+            height: 30vh;
+        }
+    }
+
+    .detail-movie {
+        min-height: 50vh;
+        margin-top: 10px;
+    }
+
+    main {
+        >a {
+            width: 15%;
+        }
+    }
+}
